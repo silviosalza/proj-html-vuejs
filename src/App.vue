@@ -2,11 +2,13 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppNavbar from "./components/AppNavbar.vue";
 import AppJumbotron from "./components/AppJumbotron.vue";
+import AppNewsSection from "./components/AppNewsSection.vue";
 export default{
   components: {
     AppHeader,
     AppNavbar,
-    AppJumbotron
+    AppJumbotron,
+    AppNewsSection
 },
 }
 </script>
@@ -14,6 +16,8 @@ export default{
 <template>
   <AppHeader/>
   <AppJumbotron/>
+  <AppNewsSection/>
+  
   
 </template>
 
