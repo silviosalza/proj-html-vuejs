@@ -1,16 +1,12 @@
 <script>
-import AppHeader from "./components/AppHeader.vue"
+import AppHeader from "./components/AppHeader.vue";
+import AppNavbar from "./components/AppNavbar.vue";
 import AppJumbotron from "./components/AppJumbotron.vue";
 export default{
   components: {
     AppHeader,
-    AppJumbotron
+    AppNavbar,
 },
-  data(){
-    return{
-      
-    }
-  }
 }
 </script>
 
