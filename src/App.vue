@@ -6,6 +6,7 @@ export default{
   components: {
     AppHeader,
     AppNavbar,
+    AppJumbotron
 },
 }
 </script>
@@ -19,5 +20,9 @@ export default{
 <style lang="scss">
 @use "./styles/general.scss" as *;
 @use "./styles/utilities/variables" as *;
+
+body{
+  font-family: $main-font;
+}
 
 </style>
