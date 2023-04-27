@@ -36,7 +36,8 @@ export default {
     height: 6rem;
     width: 6rem;
     background-color: $orange_detail; 
-    border-radius: 50%;    
+    border-radius: 50%;  
+    margin-bottom: 1rem;  
     i{
         font-size: 3rem;
         color: $white_text;
