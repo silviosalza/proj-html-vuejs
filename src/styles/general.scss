@@ -10,9 +10,31 @@
     font-weight: 700;
     
 }
-.fa-chevron-right{
+.fa-solid{
     font-size: 0.7rem;
 }
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.title_section{
+    padding: 4rem 0;
+   
+    h6{
+      color: $grey_text;
+    }
+  }
+.pseudoelem_orange{
+      width: 100px;
+      background-color: rgb(255, 188, 63);
+      height: 2px;
+      
+}
+.section_footer{
+    background-color: $black_text;
+    height: 100px;
+  }
 
 
 

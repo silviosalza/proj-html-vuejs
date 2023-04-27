@@ -5,7 +5,6 @@ export default {
         title: String,
         subtitle: String,
         img: String,
-         
     }
 }
 
