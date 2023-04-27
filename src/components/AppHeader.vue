@@ -79,14 +79,10 @@ header{
         display: flex;
         align-items: center;
         gap: 2rem;
-        .btn{
-            border-radius: 0;
-            padding: .4rem 1.5rem;
-        }
     }
     ul{
-        gap: 1rem;
         margin: 0;
+        padding: 0;
     }
 }
 

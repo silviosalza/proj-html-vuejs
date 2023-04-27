@@ -10,7 +10,7 @@ export default {
         <div class="container">
             <h1>Tech Forum!</h1>
             <p>Discuss al the latest technology news and trends</p>
-            <button type="button" class="btn">GET AVADA NOW! <i class="fa-solid fa-chevron-right"></i></button>
+            <button type="button" class="btn"><span>GET AVADA NOW!</span><i class="fa-solid fa-chevron-right"></i></button>
         </div>
     </section>
     <div class="jumbotron_bottom">
@@ -40,8 +40,9 @@ export default {
     .btn{
         color: $white_text;
         background-color: $header_color;
-        border-radius: 0;
-        padding: 0.4rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
     }
 }
 .jumbotron_bottom{
