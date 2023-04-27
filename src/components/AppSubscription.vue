@@ -34,6 +34,7 @@ export default {
 @use "../styles/utilities/variables" as *;
 .join_section{
     background-image: url(../assets/img/join_now_cta_bg.jpg);
+    background-size:cover ;
     color: $white_text;
     h2{
         font-size: 3rem;
