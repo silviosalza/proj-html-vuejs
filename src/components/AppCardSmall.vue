@@ -1,12 +1,10 @@
 <script>
 export default {
-    name: "AppCard",
+    name: "AppCardSmall",
     props: {
         title: String,
         subtitle: String,
-        paragraph: String,
-        img: String, 
-        imgSmall: String,
+        img: String,
          
     }
 }
@@ -14,39 +12,36 @@ export default {
 </script>
 
 <template>
-    <div class="card ms_card col-4">
-        <img :src="img" class="card-img-top" alt="...">
-        <div class="card-body">
+    <div class="cardSmall d-flex">
+        <div class="imgSmall col-5">
+            <img :src="img" alt="...">
+        </div>
+        <div class="card-body col-7">
             <h3>{{ title }}</h3>
             <h4>{{ subtitle }}</h4>
-            <p>{{ paragraph }}</p>
         </div>
     </div>
 </template>
-
 <style scoped lang="scss">
 @use "../styles/general.scss" as *;
 @use "../styles/utilities/variables" as *;
 
-.card.ms_card{
-    border: 0;
-    padding: 0.5rem;
-    .card-img-top{
-        border-radius: 0;
+.cardSmall{
+    padding: 1rem 0;
+    img{
+        width: 100%;
     }
+
     .card-body{
-        padding: 1rem 0 0 0;
+        padding-left: 1rem;
         h3{
             font-size: 1.1rem;
         }
         h4{
             font-size: 0.7rem;
         }
-        p{
-            font-size:0.9rem ;
-            margin-bottom: 0;
-        }
     }
 }
+
 
 </style>
