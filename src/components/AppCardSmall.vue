@@ -28,7 +28,8 @@ export default {
 .cardSmall{
     padding: 1rem 0;
     display: inline-block;
-    overflow: hidden;      
+    overflow: hidden;    
+    cursor: pointer;  
     img{
         width: 100%;
     }

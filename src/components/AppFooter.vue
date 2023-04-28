@@ -125,7 +125,7 @@ a{
         background-color: lightskyblue;
     }
     &.in{
-        background-color: rgb(109, 20, 169);
+        background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
     }
 }
 .scroll_top{

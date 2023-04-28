@@ -31,6 +31,7 @@ export default {
 .card.ms_card{
     border: 0;
     padding: .2rem;
+    cursor: pointer;
     .card-img-top{
         border-radius: 0;
     }
