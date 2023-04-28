@@ -6,7 +6,6 @@ export default{
     components: {
         AppCard,
         AppCardSmall
-
     },
     data(){
       return{
@@ -16,46 +15,69 @@ export default{
             subtitle: "October 11th,2015 | 2 Comments",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
             img: "../src/assets/img/post_feat_img_25-320x202.jpg",
-            guide: false
+            guide: false,
+            key: 0
           },
           {
             title: "How AI are revolutionizing photography",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
             img: "../src/assets/img/post_feat_img_24-320x202.jpg",
-            guide: false
+            guide: false,
+            key: 1
           },
           {
             title: "Are Smartwatches just a market bubble?",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
             img: "../src/assets/img/post_feat_img_23-320x202.jpg",
-            guide: false
+            guide: false,
+            key: 2
           },
           {
             title: "Guide to the best E-Books on the market",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
             img: "../src/assets/img/post_feat_img_22-320x202.jpg",
-            guide: true
+            guide: true,
+            key: 3
           },
           {
             title: "Guide to the best telephoto lenses for long shots",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
             img: "../src/assets/img/post_feat_img_21-320x202.jpg",
-            guide: true
+            guide: true,
+            key: 4
           },
           {
             title: "Guide to the most aesthetically elegant laptops",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
             img: "../src/assets/img/post_feat_img_20-320x202.jpg",
-            guide: true
+            guide: true,
+            key: 5
           }, 
         ],
+        selectedKeys: []
       }
     },
+    methods: {
+      selectKeys() {
+        const keys = [];
+        while (keys.length <= 2) {
+          const key = Math.floor(Math.random() * this.news.length);
+          if (!keys.includes(key)) {
+            keys.push(key);
+          }
+          this.selectedKeys = keys;
+        }
+      }
+    },
+    mounted() {
+      this.selectKeys();
+      console.log(this.selectedKeys);
+    }
 }
 
 
@@ -97,8 +119,8 @@ export default{
           <div class="col-4">
             <h3>News & Guides</h3>
             <div class="pseudoelem_orange"></div>
-            <template v-for="(news,index) in news" :key="index">
-              <AppCardSmall v-if="index <= 2" :title = "news.title" :subtitle="news.subtitle" :img="news.img"/>
+            <template v-for="(element, index) in selectedKeys" :key="index">
+              <AppCardSmall :title = "this.news[element].title" :subtitle="this.news[element].subtitle" :img="this.news[element].img"/>
             </template>
           </div>
         </div>
