@@ -41,7 +41,7 @@ export default{
 </script>
 
 <template>
-    <header>
+    <header id="header">
         <div class="container d-flex justify-content-between">
             <div class="logo">
                 <img src="../assets/img/logo.png" alt="">

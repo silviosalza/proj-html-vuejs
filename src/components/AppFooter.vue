@@ -55,7 +55,7 @@ export default{
                     <AppTopicList v-for="(element,index) in topics" :key="index" :title = "element.title"/>
                 </div>
                 <div class="col-3">
-                    <h5>LATER REPLIES</h5>
+                    <h5>LATEST REPLIES</h5>
                     <AppTopicList v-for="(element,index) in topics" :key="index" :post = "element.post.slice(0 , 30)"/>
                 </div>
             </div>
@@ -71,6 +71,9 @@ export default{
             <a href=""><div class="circle in px-3 d-flex justify-content-center align-items-center"><i class="fa-brands fa-instagram"></i></div></a>
             <a href=""><div class="circle yt px-3 d-flex justify-content-center align-items-center"><i class="fa-brands fa-youtube"></i></div></a>
         </div>
+    </div>
+    <div class="scroll_top d-flex justify-content-center align-items-center">
+        <a href="#header"><i class="fa-solid fa-chevron-up"></i></a>
     </div>
 
 </template>
@@ -121,6 +124,15 @@ a{
     &.in{
         background-color: rgb(109, 20, 169);
     }
+}
+.scroll_top{
+    width: 50px;
+    height: 50px;
+    background-color: $black_text;
+    color: #f2f2f2;
+    position: fixed;
+    right: 5rem;
+    bottom: 0;
 }
 
 
