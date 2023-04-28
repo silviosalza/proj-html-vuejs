@@ -27,6 +27,8 @@ export default {
 
 .cardSmall{
     padding: 1rem 0;
+    display: inline-block;
+    overflow: hidden;      
     img{
         width: 100%;
     }
@@ -41,6 +43,10 @@ export default {
         }
     }
 }
-
+.cardSmall:hover .imgSmall{
+    transform: scale(1.05);
+    transition: all .2s ease;
+    // vertical-align: middle;
+}
 
 </style>

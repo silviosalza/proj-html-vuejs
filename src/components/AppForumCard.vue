@@ -10,7 +10,7 @@ export default {
 
 <template>
     <div class="card col-2">
-        <div class="circle d-flex justify-content-center align-items-center">
+        <div class="flip circle d-flex justify-content-center align-items-center">
             <i :class="icon"></i>
         </div>
         <h5>{{ title }}</h5>
@@ -30,6 +30,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
 }
 .circle{
@@ -42,6 +43,33 @@ export default {
         font-size: 3rem;
         color: $white_text;
     }
+}
+
+.card:hover .flip{
+	backface-visibility: visible !important;
+	animation: flip 2s ease 1;
+}
+@keyframes flip {
+	0% {
+		transform: perspective(400px) rotateY(0);
+		animation-timing-function: ease-out;
+	}
+	40% {
+		transform: perspective(400px) translateZ(110px) rotateY(170deg);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: perspective(400px) translateZ(110px) rotateY(190deg) scale(1);
+		animation-timing-function: ease-in;
+	}
+	80% {
+		transform: perspective(400px) rotateY(360deg) scale(.95);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: perspective(400px) scale(1);
+		animation-timing-function: ease-in;
+	}
 }
 
 </style>

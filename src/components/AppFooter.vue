@@ -72,9 +72,12 @@ export default{
             <a href=""><div class="circle yt px-3 d-flex justify-content-center align-items-center"><i class="fa-brands fa-youtube"></i></div></a>
         </div>
     </div>
-    <div class="scroll_top d-flex justify-content-center align-items-center">
-        <a href="#header"><i class="fa-solid fa-chevron-up"></i></a>
-    </div>
+    
+    <a href="#header">
+        <div class="scroll_top d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-chevron-up"></i>
+        </div>
+    </a>
 
 </template>
 
@@ -133,6 +136,13 @@ a{
     position: fixed;
     right: 5rem;
     bottom: 0;
+    cursor: pointer;
+    a{
+        color: inherit;
+    }
+}
+.scroll_top:hover {
+    height: 80px ;
 }
 
 

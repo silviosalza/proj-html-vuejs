@@ -16,7 +16,7 @@ export default {
 <template>
     <div class="card ms_card col-4">
         <img :src="img" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body px-2">
             <h3>{{ title }}</h3>
             <h4>{{ subtitle }}</h4>
             <p>{{ paragraph }}</p>
@@ -30,7 +30,7 @@ export default {
 
 .card.ms_card{
     border: 0;
-    padding: 0.5rem;
+    padding: .2rem;
     .card-img-top{
         border-radius: 0;
     }
@@ -47,6 +47,15 @@ export default {
             margin-bottom: 0;
         }
     }
+}
+
+.card:hover {
+    transform: scale(105%);
+    transition-duration:.5s;
+    z-index: 999 ;
+}
+.card:hover .card-body{
+    background-color: #27aabe10;
 }
 
 </style>
