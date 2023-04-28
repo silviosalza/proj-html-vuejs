@@ -12,7 +12,8 @@ export default {
 <template>
         <ul>
             <li>
-                <a href="">{{ title }}</a>
+                <a id="link" href="">{{ title }}</a>
+                <div id="triangle-down"></div>
             </li>
         </ul>
 </template>
@@ -21,9 +22,29 @@ export default {
 @use "../styles/general.scss" as *;
 @use "../styles/utilities/variables" as *;
 
+#triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-top: 50px solid $header_color;
+      position: absolute;
+      left: calc(50% - 40px);
+      top: 100%;
+      display: none;
+}
+ul:hover #triangle-down{
+  display: block;
+}
+li:hover #link{
+  color: black;
+}
+
+
 ul{
     li{
             list-style: none;
+            position: relative;
             padding: 0;
             margin: 0;
             text-align: center;
