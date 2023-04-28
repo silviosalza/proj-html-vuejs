@@ -42,14 +42,18 @@ export default{
 
 <template>
     <header id="header">
-        <div class="container d-flex justify-content-between">
+        <div class="header d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="../assets/img/logo.png" alt="">
             </div>
             <div class="nav">
                 <AppNavbar v-for="(menu,index) in menu" :key="index" :title = "menu.title" :link="menu.link"/> 
                 <button type="button" class="btn btn-dark">JOIN US</button>
-                <span><i class="fa-solid fa-magnifying-glass"></i></span>        
+                <span class="d-flex align-items-center">
+                  <a href=""><i class="fa-solid fa-magnifying-glass mx-3"></i></a> 
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search">
+                </span> 
+       
             </div>
         </div>
     </header>
@@ -66,9 +70,10 @@ header{
     font-weight: 700;
 
 
-    .container{
-        height: 100%;
-    }
+     .header{
+         height: 100%;
+         padding: 0 10rem;
+     }
     .logo{
         height: 100%;
         display: flex;
@@ -84,6 +89,15 @@ header{
         margin: 0;
         padding: 0;
     }
+}
+.fa-magnifying-glass{
+  font-size: 1.5rem;
+}
+a:hover i{
+  color: black;
+}
+.form-control{
+  border-radius: 0;
 }
 
 
