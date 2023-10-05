@@ -14,7 +14,7 @@ export default{
             title: "Smartphone and cars, how to optimize the features",
             subtitle: "October 11th,2015 | 2 Comments",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
-            img: "../src/assets/img/post_feat_img_25-320x202.jpg",
+            img: "./src/assets/img/post_feat_img_25-320x202.jpg",
             guide: false,
             key: 0
           },
@@ -22,7 +22,7 @@ export default{
             title: "How AI are revolutionizing photography",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
-            img: "../src/assets/img/post_feat_img_24-320x202.jpg",
+            img: "./src/assets/img/post_feat_img_24-320x202.jpg",
             guide: false,
             key: 1
           },
@@ -30,7 +30,7 @@ export default{
             title: "Are Smartwatches just a market bubble?",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
-            img: "../src/assets/img/post_feat_img_23-320x202.jpg",
+            img: "./src/assets/img/post_feat_img_23-320x202.jpg",
             guide: false,
             key: 2
           },
@@ -38,7 +38,7 @@ export default{
             title: "Guide to the best E-Books on the market",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
-            img: "../src/assets/img/post_feat_img_22-320x202.jpg",
+            img: "./src/assets/img/post_feat_img_22-320x202.jpg",
             guide: true,
             key: 3
           },
@@ -46,7 +46,7 @@ export default{
             title: "Guide to the best telephoto lenses for long shots",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
-            img: "../src/assets/img/post_feat_img_21-320x202.jpg",
+            img: "./src/assets/img/post_feat_img_21-320x202.jpg",
             guide: true,
             key: 4
           },
@@ -54,7 +54,7 @@ export default{
             title: "Guide to the most aesthetically elegant laptops",
             subtitle: "October 11th,2015 | Comments Off",
             paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptatem, repudiandae hic modi quaerat facilis nemo reiciendis incidunt, debitis quam saepe cum possimus aut maiores molestias illum sapiente unde.",
-            img: "../src/assets/img/post_feat_img_20-320x202.jpg",
+            img: "./src/assets/img/post_feat_img_20-320x202.jpg",
             guide: true,
             key: 5
           }, 
